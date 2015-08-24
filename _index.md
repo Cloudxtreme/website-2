@@ -9,4 +9,4 @@
 [stylus]: https://learnboost.github.io/stylus
 [markdown]: http://daringfireball.net/projects/markdown
 [skilstak]: http://skilstak.com
-[//]: <> I was tired today so I could not do much.
+[//]: # (I was tired today so I could not do much.)
