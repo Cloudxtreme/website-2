@@ -1,3 +1,2 @@
 # News
-------
-- Working on Java `BattleEng`
+### Working on Java `BattleEng`
