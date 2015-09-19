@@ -181,8 +181,9 @@ html {
 body {
   background-color: #fdf6e3;
   margin: 0 auto;
+  max-width: 75;
   border: 1pt solid #93a1a1;
-  padding: 4em;
+  padding: 1em;
 }
 code {
   background-color: #eee8d5;
