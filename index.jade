@@ -1,3 +1,7 @@
 != partial("_index.md")
 
-!= partial("_news.md")
+div.box
+  h1 News
+  for _news in ['_articleOne', '_articleTwo', '_articleThree']
+    div.box
+      != partial(_news)
