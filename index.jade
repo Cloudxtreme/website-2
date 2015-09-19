@@ -1,7 +1,8 @@
 != partial("_index.md")
 
-div.box
-  h1 News
-  for _news in ['_articleOne.md', '_articleTwo.md', '_articleThree.md']
-    div.box
-      != partial(_news)
+div.news
+  div.box
+    h1 News
+    for _news in ['_articleOne.md', '_articleTwo.md', '_articleThree.md']
+      div.box
+        != partial(_news)
