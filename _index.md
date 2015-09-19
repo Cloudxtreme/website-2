@@ -8,4 +8,3 @@
 [stylus]: https://learnboost.github.io/stylus
 [markdown]: http://daringfireball.net/projects/markdown
 [skilstak]: http://skilstak.com
-"Github markdown rendering..."
