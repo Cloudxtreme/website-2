@@ -1,2 +1,3 @@
 ## Testing News System
-I am testing the new news system!
+There is a news system. It may be changing over time so lookout for
+updates!
