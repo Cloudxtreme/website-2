@@ -19,6 +19,8 @@ html
       li
         a(href="/news.html")
           i.fa.fa-newspaper-o.fa-lg  News
+    h2.updated Today is 
+      script document.write((new Date(document.lastModified)).toLocaleString());
   body
     != yield
   footer
@@ -26,5 +28,3 @@ html
       h5 CoderPythonX 
         i.fa.fa-fighter-jet.fa-lg
         p Thank you for visiting my website.
-        p.updated The Current Time Is: 
-          script document.write((new Date(document.lastModified)).toLocaleString());
