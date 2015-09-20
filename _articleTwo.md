@@ -1,2 +1,3 @@
 ## Testing News System
-I am testing the new news system!
+The news has now moved to
+[http://coderpythonx.surge.sh/new.html](http://coderpythonx.surge.sh/new.html)
