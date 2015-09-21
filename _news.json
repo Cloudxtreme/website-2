@@ -1,0 +1,10 @@
+{
+  articles: [
+    {
+      title: "Testing News System"
+    },
+    {
+      title: "News has moved!"
+    }
+  ]
+}
