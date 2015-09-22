@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title CoderPythonX
+    link(rel="stylesheet" href="bootstrap.css")
+    link(rel="stylesheet" href="solarized-light.css")
+    link(rel="stylesheet" href="main.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+    link(rel="icon" href="favicon.png")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  header
+    ul.nav.nav-pills
+      li
+        a(href="/")
+          i.fa.fa-home.fa-lg  Home
+      li
+        a(href="/programming_languages.html")
+          i.fa.fa-code.fa-lg  Programming Languages
+      li
+        a(href="/news.html")
+          i.fa.fa-newspaper-o.fa-lg  News
+    p.updated Today is 
+      script document.write((new Date(document.lastModified)).toLocaleString());
+  body
+    != yield
+    include ../_disqus.html
+  footer
+    pre.thank
+      h5 CoderPythonX 
+        i.fa.fa-fighter-jet.fa-lg
+        p Thank you for visiting my website.
