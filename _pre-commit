@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Setup: `ln -fs ../../pre-commit .git/config/hooks` 
+
 harp compile
 [ $? -ne 0 ] && exit 1
 
