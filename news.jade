@@ -3,6 +3,7 @@ div.container
     div.box
       div.row
         h1 News
-        for _news in public._data.articles
+        each _article in public._data.articles
           div.col-xs-12.col-md-6
             div.box
+              a(href="#{_article.url}")
