@@ -1,14 +1,10 @@
 #!/bin/sh
 
 # Setup: `ln -fs ../../_pre-commit .git/hooks/pre-commit`
-echo "        Starting pre-commit..."
-echo "        Harp Compiling..."
+
 harp compile
 [ $? -ne 0 ] && exit 1
-echo "        Harp Compile is complete!"
-echo "        Publishing to Surge..."
+
 surge www
 [ $? -ne 0 ] && exit 1
 exit 0
-echo "        Published to Surge!"
-echo "        Pre-commit has ended! Starting commit..."
