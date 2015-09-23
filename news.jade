@@ -10,3 +10,5 @@ div.container
                 h2 #{_article.title}
               p #{_article.summary}
                 a(href="#{_article.url}")  ...more
+if public._data.news.disqus
+  include _disqus.html

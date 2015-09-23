@@ -1,6 +1,9 @@
 {
   "programming_languages": {
-    "nodisqus": false
+    "disqus": false
+  },
+  "news": {
+    "disqus": false
   },
   "articles": [
     {
