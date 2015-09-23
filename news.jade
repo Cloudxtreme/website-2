@@ -1,11 +1,11 @@
 div.container
   div.news
-    div.box
+    div.box-lg
       div.row
         h1 News
         for _article in public._data.articles
           div.col-xs-12.col-md-6
-            div.box
+            div.box-md
               a(href="#{_article.url}")
                 h2 #{_article.title}
               p #{_article.summary}
