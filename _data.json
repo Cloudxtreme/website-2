@@ -1,4 +1,7 @@
 {
+  "programming_languages": {
+    "nodisqus": true
+  },
   "articles": [
     {
       "title": "Testing News System",
