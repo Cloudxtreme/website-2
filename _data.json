@@ -1,4 +1,8 @@
 {
+  "color_scheme": {
+    "solarized_dark": false,
+    "solarized_light": true
+  },
   "programming_languages": {
     "disqus": false
   },

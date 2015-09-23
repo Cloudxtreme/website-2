@@ -3,7 +3,10 @@ html
   head
     title CoderPythonX
     link(rel="stylesheet" href="bootstrap.css")
-    link(rel="stylesheet" href="solarized-light.css")
+    if public._data.color_scheme.solarized_light  
+      link(rel="stylesheet" href="solarized-light.css")
+    else if public._data.color_scheme.solarized_dark
+      link(rel="stylesheet" href="solarized-dark.css")
     link(rel="stylesheet" href="main.css")
     link(rel="stylesheet" href="box.css")
     link(rel="stylesheet" href="colors-solarized.css")
