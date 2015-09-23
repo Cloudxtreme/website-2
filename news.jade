@@ -6,7 +6,7 @@ div.container
         for _article in public._data.articles
           div.col-xs-12.col-md-6
             div.box-md
-              a(href="#{_article.url}")
+              a(href="#{_article.slug}")
                 h2 #{_article.title}
               p #{_article.summary}
                 a(href="#{_article.url}")  ...more
