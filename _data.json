@@ -5,6 +5,9 @@
   "news": {
     "disqus": false
   },
+  "testing-news": {
+    "disqus": true
+  },
   "articles": [
     {
       "title": "Testing News System",
