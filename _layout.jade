@@ -21,8 +21,9 @@ html
       li
         a(href="/news.html")
           i.fa.fa-newspaper-o.fa-lg  News
-    p.updated Today is 
-      script document.write((new Date(document.lastModified)).toLocaleString());
+    .box-lg
+      p.updated Today is 
+        script document.write((new Date(document.lastModified)).toLocaleString());
   body
     != yield
   footer
