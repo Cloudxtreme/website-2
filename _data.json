@@ -15,6 +15,9 @@
   "suggestions": {
     "disqus": true
   },
+  "redesign": {
+    "disqus": true
+  },
   "articles": [
     {
       "title": "Testing News System",

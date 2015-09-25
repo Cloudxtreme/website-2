@@ -1,0 +1,8 @@
+h1 School Work
+h3 Teachers, please select your class to see the work.
+
+ul.nav.nav-pills
+  for _class in public._data.classes
+    li
+      a(href="#{_class.slug}")
+        #{_class.icon}  #{_class.name}
