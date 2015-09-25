@@ -21,9 +21,12 @@
   ],
   "classes": [
     {
-      "name": "Mr. Thrift Science",
-      "slug": "/thrift_science.html",
-      "icon": "i.fa.fa-flask"
+      "name": "Mr. Thrift's Science",
+      "slug": "/thrift_science.html"
+    },
+    {
+      "name": "Mr. Thrift's Social Studies",
+      "slug": "/thrift_ss.html"
     }
   ]
 }
