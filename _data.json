@@ -18,5 +18,12 @@
       "summary": "There is a new news system, as you probably know by now.",
       "slug": "/testing_news.html"
     }
+  ],
+  "classes": [
+    {
+      "name": "Mr. Thrift Science",
+      "slug": "/thrift_science.html",
+      "icon": "i.fa.fa-flask"
+    }
   ]
 }
