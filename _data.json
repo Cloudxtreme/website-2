@@ -17,6 +17,11 @@
       "title": "Testing News System",
       "summary": "There is a new news system, as you probably know by now.",
       "slug": "/testing_news.html"
+    },
+    {
+      "title": "Changes",
+      "summary": "Changes may be made soon.",
+      "slug": "/redesign.html"
     }
   ],
   "classes": [
