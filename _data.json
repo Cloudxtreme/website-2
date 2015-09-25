@@ -12,6 +12,9 @@
   "testing_news": {
     "disqus": true
   },
+  "suggestions": {
+    "disqus": true
+  },
   "articles": [
     {
       "title": "Testing News System",

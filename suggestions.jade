@@ -1,4 +1,6 @@
 div.article
   h2 Suggestions
-  p I need suggestions for the website! (Also need to add comments to
-    two pages...)
+  p I need suggestions for the website! (Also need to add comments to two pages...)
+
+if public._data.suggestions.disqus
+  include _disqus.html
