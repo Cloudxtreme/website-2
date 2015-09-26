@@ -61,17 +61,17 @@
     {
       "name": "Base01",
       "class":".base01",
-      "hex": "#002b36"
+      "hex": "#586e75"
     },
     {
       "name": "Base00",
       "class":".base00",
-      "hex": "#002b36"
+      "hex": "#657b83"
     },
     {
       "name": "Base0",
       "class":".base0",
-      "hex": "#002b36"
+      "hex": "#839496"
     }
   ]
 }
