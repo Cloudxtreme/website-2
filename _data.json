@@ -76,22 +76,22 @@
     {
       "name": "Base1",
       "class":".base1",
-      "hex": "#839496"
+      "hex": "#93a1a1"
     },
     {
       "name": "Base2",
       "class":".base2",
-      "hex": "#839496"
+      "hex": "#eee8d5"
     },
     {
       "name": "Base3",
       "class":".base3",
-      "hex": "#839496"
+      "hex": "#fdf6e3"
     },
     {
       "name": "Yellow",
       "class":".syellow",
-      "hex": "#839496"
+      "hex": "#b58900"
     },
     {
       "name": "Orange",
