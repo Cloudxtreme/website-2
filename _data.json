@@ -50,77 +50,77 @@
   "colors": [
     {
       "name": "Base03",
-      "class":".base03",
+      "class":"base03",
       "hex": "#002b36"
     },
     {
       "name": "Base02",
-      "class":".base02",
+      "class":"base02",
       "hex": "#073642"
     },
     {
       "name": "Base01",
-      "class":".base01",
+      "class":"base01",
       "hex": "#586e75"
     },
     {
       "name": "Base00",
-      "class":".base00",
+      "class":"base00",
       "hex": "#657b83"
     },
     {
       "name": "Base0",
-      "class":".base0",
+      "class":"base0",
       "hex": "#839496"
     },
     {
       "name": "Base1",
-      "class":".base1",
+      "class":"base1",
       "hex": "#93a1a1"
     },
     {
       "name": "Base2",
-      "class":".base2",
+      "class":"base2",
       "hex": "#eee8d5"
     },
     {
       "name": "Base3",
-      "class":".base3",
+      "class":"base3",
       "hex": "#fdf6e3"
     },
     {
       "name": "Yellow",
-      "class":".syellow",
+      "class":"syellow",
       "hex": "#b58900"
     },
     {
       "name": "Orange",
-      "class":".sorange",
+      "class":"sorange",
       "hex": "#cb4b16"
     },
     {
       "name": "Red",
-      "class":".sred",
+      "class":"sred",
       "hex": "#dc322f"
     },
     {
       "name": "Magenta",
-      "class":".smagenta",
+      "class":"smagenta",
       "hex": "#d33682"
     },
     {
       "name": "Violet",
-      "class":".sviolet",
+      "class":"sviolet",
       "hex": "#6c71c4"
     },
     {
       "name": "Blue",
-      "class":".sblue",
+      "class":"sblue",
       "hex": "#268bd2"
     },
     {
       "name": "Cyan",
-      "class":".scyan",
+      "class":"scyan",
       "hex": "#2aa198"
     },
     {
