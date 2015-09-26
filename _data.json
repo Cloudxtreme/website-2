@@ -72,6 +72,61 @@
       "name": "Base0",
       "class":".base0",
       "hex": "#839496"
+    },
+    {
+      "name": "Base1",
+      "class":".base0",
+      "hex": "#839496"
+    },
+    {
+      "name": "Base2",
+      "class":".base0",
+      "hex": "#839496"
+    },
+    {
+      "name": "Base3",
+      "class":".base0",
+      "hex": "#839496"
+    },
+    {
+      "name": "Yellow",
+      "class":".base0",
+      "hex": "#839496"
+    },
+    {
+      "name": "Orange",
+      "class":".base0",
+      "hex": "#839496"
+    },
+    {
+      "name": "Red",
+      "class":".base0",
+      "hex": "#839496"
+    },
+    {
+      "name": "Magenta",
+      "class":".base0",
+      "hex": "#839496"
+    },
+    {
+      "name": "Violet",
+      "class":".base0",
+      "hex": "#839496"
+    },
+    {
+      "name": "Blue",
+      "class":".base0",
+      "hex": "#839496"
+    },
+    {
+      "name": "Cyan",
+      "class":".base0",
+      "hex": "#839496"
+    },
+    {
+      "name": "Green",
+      "class":".base0",
+      "hex": "#839496"
     }
   ]
 }
