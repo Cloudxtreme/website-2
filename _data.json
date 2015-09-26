@@ -125,7 +125,7 @@
     },
     {
       "name": "Green",
-      "class":".sgreen",
+      "class":"sgreen",
       "hex": "#859900"
     }
   ]
