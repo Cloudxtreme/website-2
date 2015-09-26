@@ -46,5 +46,32 @@
       "slug": "/thrift_ss.html",
       "icon": "fa fa-globe fa-lg"
     }
+  ],
+  "colors": [
+    {
+      "name": "Base03",
+      "class":".base03",
+      "hex": "#002b36"
+    },
+    {
+      "name": "Base02",
+      "class":".base02",
+      "hex": "#073642"
+    },
+    {
+      "name": "Base01",
+      "class":".base01",
+      "hex": "#002b36"
+    },
+    {
+      "name": "Base00",
+      "class":".base00",
+      "hex": "#002b36"
+    },
+    {
+      "name": "Base0",
+      "class":".base0",
+      "hex": "#002b36"
+    }
   ]
 }
