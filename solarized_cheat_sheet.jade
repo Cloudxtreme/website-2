@@ -1,4 +1,4 @@
-- var color = ["base03bg","base02bg","base01bg","base00bg","base0bg","base1bg","base2bg","base3bg","ysellowbg","sorangebg","sredbg","sagentabg","svioletbg","sbluebg","scyanbg","sgreenbg"]
+- var colors = ["base03bg","base02bg","base01bg","base00bg","base0bg","base1bg","base2bg","base3bg","ysellowbg","sorangebg","sredbg","sagentabg","svioletbg","sbluebg","scyanbg","sgreenbg"]
 
 h1 Solarized Cheat Sheet
 h2 Colors by Ethan Schoonover
@@ -6,6 +6,6 @@ h2 Colors by Ethan Schoonover
 div.container
   div.row
     div.col-xs-12.col-md-6.col-lg-3
-      div.base03bg
-        p Base03
-      div.base02bg
+      for _color in colors
+        div(class="#{_color}")
+          p #{_color}
