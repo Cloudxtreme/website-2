@@ -38,11 +38,13 @@
   "classes": [
     {
       "name": "Mr. Thrift's Science",
-      "slug": "/thrift_science.html"
+      "slug": "/thrift_science.html",
+      "icon": "fa fa-flask fa-lg"
     },
     {
       "name": "Mr. Thrift's Social Studies",
-      "slug": "/thrift_ss.html"
+      "slug": "/thrift_ss.html",
+      "icon": "fa fa-globe fa-lg"
     }
   ]
 }
