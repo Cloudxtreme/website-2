@@ -96,37 +96,37 @@
     {
       "name": "Orange",
       "class":".sorange",
-      "hex": "#839496"
+      "hex": "#cb4b16"
     },
     {
       "name": "Red",
       "class":".sred",
-      "hex": "#839496"
+      "hex": "#dc322f"
     },
     {
       "name": "Magenta",
       "class":".smagenta",
-      "hex": "#839496"
+      "hex": "#d33682"
     },
     {
       "name": "Violet",
       "class":".sviolet",
-      "hex": "#839496"
+      "hex": "#6c71c4"
     },
     {
       "name": "Blue",
       "class":".sblue",
-      "hex": "#839496"
+      "hex": "#268bd2"
     },
     {
       "name": "Cyan",
       "class":".scyan",
-      "hex": "#839496"
+      "hex": "#2aa198"
     },
     {
       "name": "Green",
       "class":".sgreen",
-      "hex": "#839496"
+      "hex": "#859900"
     }
   ]
 }
