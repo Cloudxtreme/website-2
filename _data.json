@@ -141,6 +141,7 @@
     {
       "name": "Green",
       "class":"sgreen",
+      "bgclass": "sgreenbg",
       "hex": "#859900",
       "see": true
     }
