@@ -75,24 +75,28 @@
     {
       "name": "Base0",
       "class":"base0",
+      "bgclass": "base0bg",
       "hex": "#839496",
       "see": true
     },
     {
       "name": "Base1",
       "class":"base1",
+      "bgclass": "base1bg",
       "hex": "#93a1a1",
       "see": true
     },
     {
       "name": "Base2",
       "class":"base2",
+      "bgclass": "base2bg",
       "hex": "#eee8d5",
       "see": true
     },
     {
       "name": "Base3",
       "class":"base3",
+      "bgclass": "base3bg",
       "hex": "#fdf6e3",
       "see": true
     },
