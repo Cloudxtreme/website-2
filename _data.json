@@ -52,12 +52,13 @@
       "name": "Base03",
       "class":"base03",
       "hex": "#002b36",
-      "see": ""
+      "see": false
     },
     {
       "name": "Base02",
       "class":"base02",
-      "hex": "#073642"
+      "hex": "#073642",
+      "see": false
     },
     {
       "name": "Base01",
