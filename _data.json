@@ -117,24 +117,28 @@
     {
       "name": "Magenta",
       "class":"smagenta",
+      "bgclass": "smagentabg",
       "hex": "#d33682",
       "see": true
     },
     {
       "name": "Violet",
       "class":"sviolet",
+      "bgclass": "svioletbg",
       "hex": "#6c71c4",
       "see": true
     },
     {
       "name": "Blue",
       "class":"sblue",
+      "bgclass": "sbluebg",
       "hex": "#268bd2",
       "see": true
     },
     {
       "name": "Cyan",
       "class":"scyan",
+      "bgclass": "scyanbg",
       "hex": "#2aa198",
       "see": true
     },
