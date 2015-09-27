@@ -135,12 +135,14 @@
     {
       "name": "Cyan",
       "class":"scyan",
-      "hex": "#2aa198"
+      "hex": "#2aa198",
+      "see": true
     },
     {
       "name": "Green",
       "class":"sgreen",
-      "hex": "#859900"
+      "hex": "#859900",
+      "see": true
     }
   ]
 }
