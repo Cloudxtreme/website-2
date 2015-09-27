@@ -51,24 +51,28 @@
     {
       "name": "Base03",
       "class":"base03",
+      "bgclass": "base03bg",
       "hex": "#002b36",
       "see": false
     },
     {
       "name": "Base02",
       "class":"base02",
+      "bgclass": "base02bg",
       "hex": "#073642",
       "see": false
     },
     {
       "name": "Base01",
       "class":"base01",
+      "bgclass": "base01bg",
       "hex": "#586e75",
       "see": true
     },
     {
       "name": "Base00",
       "class":"base00",
+      "bgclass": "base00bg",
       "hex": "#657b83",
       "see": true
     },
