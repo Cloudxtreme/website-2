@@ -99,18 +99,21 @@
     {
       "name": "Yellow",
       "class":"syellow",
+      "bgclass": "syellowbg",
       "hex": "#b58900",
       "see": true
     },
     {
       "name": "Orange",
       "class":"sorange",
+      "bgclass": "sorangebg",
       "hex": "#cb4b16",
       "see": true
     },
     {
       "name": "Red",
       "class":"sred",
+      "bgclass": "sredbg",
       "hex": "#dc322f",
       "see": true
     },
