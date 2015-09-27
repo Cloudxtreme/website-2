@@ -53,7 +53,7 @@
       "class":"base03",
       "bgclass": "base03bg",
       "hex": "#002b36",
-      "see": false
+      "see": true
     },
     {
       "name": "Base02",
@@ -95,14 +95,14 @@
       "class":"base2",
       "bgclass": "base2bg",
       "hex": "#eee8d5",
-      "see": true
+      "see": false
     },
     {
       "name": "Base3",
       "class":"base3",
       "bgclass": "base3bg",
       "hex": "#fdf6e3",
-      "see": true
+      "see": false
     },
     {
       "name": "Yellow",
