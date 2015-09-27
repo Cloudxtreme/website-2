@@ -60,7 +60,7 @@
       "class":"base02",
       "bgclass": "base02bg",
       "hex": "#073642",
-      "see": false
+      "see": true
     },
     {
       "name": "Base01",
