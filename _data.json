@@ -99,32 +99,38 @@
     {
       "name": "Yellow",
       "class":"syellow",
-      "hex": "#b58900"
+      "hex": "#b58900",
+      "see": true
     },
     {
       "name": "Orange",
       "class":"sorange",
-      "hex": "#cb4b16"
+      "hex": "#cb4b16",
+      "see": true
     },
     {
       "name": "Red",
       "class":"sred",
-      "hex": "#dc322f"
+      "hex": "#dc322f",
+      "see": true
     },
     {
       "name": "Magenta",
       "class":"smagenta",
-      "hex": "#d33682"
+      "hex": "#d33682",
+      "see": true
     },
     {
       "name": "Violet",
       "class":"sviolet",
-      "hex": "#6c71c4"
+      "hex": "#6c71c4",
+      "see": true
     },
     {
       "name": "Blue",
       "class":"sblue",
-      "hex": "#268bd2"
+      "hex": "#268bd2",
+      "see": true
     },
     {
       "name": "Cyan",
