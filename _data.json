@@ -46,5 +46,103 @@
       "slug": "/thrift_ss.html",
       "icon": "fa fa-globe fa-lg"
     }
+  ],
+  "colors": [
+    {
+      "name": "Base03",
+      "class":"base03",
+      "hex": "#002b36",
+      "see": false
+    },
+    {
+      "name": "Base02",
+      "class":"base02",
+      "hex": "#073642",
+      "see": false
+    },
+    {
+      "name": "Base01",
+      "class":"base01",
+      "hex": "#586e75",
+      "see": true
+    },
+    {
+      "name": "Base00",
+      "class":"base00",
+      "hex": "#657b83",
+      "see": true
+    },
+    {
+      "name": "Base0",
+      "class":"base0",
+      "hex": "#839496",
+      "see": true
+    },
+    {
+      "name": "Base1",
+      "class":"base1",
+      "hex": "#93a1a1",
+      "see": true
+    },
+    {
+      "name": "Base2",
+      "class":"base2",
+      "hex": "#eee8d5",
+      "see": true
+    },
+    {
+      "name": "Base3",
+      "class":"base3",
+      "hex": "#fdf6e3",
+      "see": true
+    },
+    {
+      "name": "Yellow",
+      "class":"syellow",
+      "hex": "#b58900",
+      "see": true
+    },
+    {
+      "name": "Orange",
+      "class":"sorange",
+      "hex": "#cb4b16",
+      "see": true
+    },
+    {
+      "name": "Red",
+      "class":"sred",
+      "hex": "#dc322f",
+      "see": true
+    },
+    {
+      "name": "Magenta",
+      "class":"smagenta",
+      "hex": "#d33682",
+      "see": true
+    },
+    {
+      "name": "Violet",
+      "class":"sviolet",
+      "hex": "#6c71c4",
+      "see": true
+    },
+    {
+      "name": "Blue",
+      "class":"sblue",
+      "hex": "#268bd2",
+      "see": true
+    },
+    {
+      "name": "Cyan",
+      "class":"scyan",
+      "hex": "#2aa198",
+      "see": true
+    },
+    {
+      "name": "Green",
+      "class":"sgreen",
+      "hex": "#859900",
+      "see": true
+    }
   ]
 }
