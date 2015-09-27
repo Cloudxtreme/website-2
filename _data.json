@@ -51,7 +51,8 @@
     {
       "name": "Base03",
       "class":"base03",
-      "hex": "#002b36"
+      "hex": "#002b36",
+      "see": ""
     },
     {
       "name": "Base02",
