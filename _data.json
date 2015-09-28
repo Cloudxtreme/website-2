@@ -1,7 +1,7 @@
 {
   "color_scheme": {
     "solarized_dark": true,
-    "solarized_light": true
+    "solarized_light": false
   },
   "programming_languages": {
     "disqus": false
