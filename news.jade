@@ -1,3 +1,9 @@
+br
+br
+br
+br
+br
+
 div.container
   div.news
     div.box-lg
@@ -5,7 +11,7 @@ div.container
         h1 News
         for _article in public._data.articles
           div.col-xs-12.col-md-6
-            div.box-md
+            div.border
               a(href="#{_article.slug}")
                 h2 #{_article.title}
               p #{_article.summary}
