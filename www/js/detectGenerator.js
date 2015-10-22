@@ -8,7 +8,7 @@ function generateDetectCommand() {
   var blocks = [];
   var mainComm = "";
 
-  if (blockInformationSeperator) {
+  if (!(blockInformationSeperator)) {
 
   }
 
