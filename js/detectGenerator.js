@@ -33,3 +33,7 @@ function generateDetectCommand() {
 
   document.getElementById("commandOutput").innerHTML = mainComm;
 }
+
+function exportGeneration() {
+  alert("Coming Soon to My Website Near You!");
+}
