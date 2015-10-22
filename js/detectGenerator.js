@@ -26,7 +26,7 @@ function generateDetectCommand() {
   }
 
   if (entityData) {
-    mainComm += "scoreboard players set " + scoreEntitySelector + " " + detectObjective + " " + detectAmt + "" + entityData;
+    mainComm += "scoreboard players set " + scoreEntitySelector + " " + detectObjective + " " + detectAmt + " " + entityData;
   } else {
     mainComm += "scoreboard players set " + scoreEntitySelector + " " + detectObjective + " " + detectAmt;
   }
