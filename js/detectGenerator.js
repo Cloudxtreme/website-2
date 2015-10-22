@@ -16,6 +16,6 @@ function generateDetectCommand() {
   }
 
   for (var j = 0; j < blocks.length; j++) {
-    mainComm += "execute " + entitySelector + " ~ ~ ~ detect " + blocks[j].loc + " " + blocks[j].bname + " " + blocks[j].dv
+    mainComm += "execute " + entitySelector + " ~ ~ ~ detect " + blocks[j].loc + " " + blocks[j].bname + " " + blocks[j].dv + " "
   }
 }
