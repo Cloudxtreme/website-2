@@ -3,6 +3,7 @@ function generateDetectCommand() {
   var detectObjective = document.getElementById("detectObjective").value;
   var detectAmt = document.getElementById("detectAmt").value;
   var entityData = document.getElementById("entityData").value;
+  var blockInformation = document.getElementById("blockInformation").value.split("");
 
   for (var i == 0; i < )
 }
