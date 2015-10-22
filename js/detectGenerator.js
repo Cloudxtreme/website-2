@@ -25,5 +25,5 @@ function generateDetectCommand() {
     mainComm += "scoreboard players set " + entitySelector + " " + detectObjective + " " + detectAmt;
   }
 
-  alert(mainComm);
+  document.getElementById("commandOutput").innerHTML = mainComm;
 }
