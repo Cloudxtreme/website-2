@@ -33,7 +33,3 @@ function generateDetectCommand() {
 
   document.getElementById("commandOutput").innerHTML = mainComm;
 }
-
-function exportGeneration() {
-  alert("Sorry, this feature is still a work in progress!");
-}
