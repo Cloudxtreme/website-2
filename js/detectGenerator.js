@@ -12,10 +12,10 @@ function generateDetectCommand() {
     var newId = singleBlockInformation[0];
     var newData = singleBlockInformation[1];
     var newLoc = singleBlockInformation[2];
-    blocks.push({"bname": newId, "data": newData, "loc": newLoc});
+    blocks.push({"bname": newId, "dv": newData, "loc": newLoc});
   }
 
   for (var j = 0; j < blocks.length; j++) {
-    mainComm += "execute " + entitySelector + " ~ ~ ~ detect " + blocks[j].loc + " " + blocks[j].bname + " " + blocks[j].
+    mainComm += "execute " + entitySelector + " ~ ~ ~ detect " + blocks[j].loc + " " + blocks[j].bname + " " + blocks[j].dv
   }
 }
