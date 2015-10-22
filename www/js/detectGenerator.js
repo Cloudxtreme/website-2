@@ -5,5 +5,5 @@ function generateDetectCommand() {
   var entityData = document.getElementById("entityData").value;
   var blockInformation = document.getElementById("blockInformation").value.split("\n");
 
-  for (var i == 0; i < )
+  for (var i == 0; i < blockInformation.length; i++)
 }
