@@ -26,9 +26,9 @@ function generateDetectCommand() {
   }
 
   if (entityData) {
-    mainComm += "scoreboard players set " + entitySelector + " " + detectObjective + " " + detectAmt + "" + entityData;
+    mainComm += "scoreboard players set " + scoreEntitySelector + " " + detectObjective + " " + detectAmt + "" + entityData;
   } else {
-    mainComm += "scoreboard players set " + entitySelector + " " + detectObjective + " " + detectAmt;
+    mainComm += "scoreboard players set " + scoreEntitySelector + " " + detectObjective + " " + detectAmt;
   }
 
   document.getElementById("commandOutput").innerHTML = mainComm;
