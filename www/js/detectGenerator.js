@@ -24,4 +24,6 @@ function generateDetectCommand() {
   } else {
     mainComm += "scoreboard players set " + entitySelector + " " + detectObjective + " " + detectAmt;
   }
+
+  alert(mainComm);
 }
