@@ -44,11 +44,12 @@ html
                 // i.fa.fa-sign-in.fa-lg  Detect Command Generator
             li
               div.dropdown
-                button(data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="true")
+                button(class="btn btn-default dropdown-toggle" type="button" id="generatorDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
+                  Dropdown
                   span.caret
-                ul.dropdown-menu
+                ul(class="dropdown-menu" aria-labelledby="generatorDropdown")
                   li
-                    a(href="#") Test
+                    a(href="#") Action
     != yield
     
     footer
