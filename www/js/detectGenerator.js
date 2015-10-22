@@ -4,5 +4,5 @@ function generateDetectCommand() {
   var detectAmt = document.getElementById("detectAmt").value;
   var entityData = document.getElementById("entityData").value;
 
-  alert(entitySelector);
+  for (var i == 0; i < )
 }
