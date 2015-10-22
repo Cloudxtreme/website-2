@@ -8,6 +8,10 @@ function generateDetectCommand() {
   var blocks = [];
   var mainComm = "";
 
+  if (!(blockInformationSeperator)) {
+
+  }
+
   for (var i = 0; i < blockInformation.length; i++) {
     var singleBlockInformation = blockInformation[i].split("|");
     var newId = singleBlockInformation[0];
