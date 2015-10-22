@@ -20,6 +20,6 @@ function generateDetectCommand() {
   }
 
   if (entityData) {
-    mainComm += 
+    mainComm += "scoreboard players set " + detectObjective + 
   }
 }
