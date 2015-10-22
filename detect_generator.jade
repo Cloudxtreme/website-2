@@ -47,12 +47,12 @@ br
 script(src="js/detectGenerator.js")
 
 h3.cpxTitle Block Information
-div.container
-  div.row
-    div.col-xs-8.col-xs-offset-2.cpx-center
-      a(type="button" class="btn btn-danger" onclick="generateDetectCommand();")
-        i.fa.fa-arrow-right  Generate
-  
+div.cpx-center
+  a(type="button" class="btn btn-danger" onclick="generateDetectCommand();")
+    i.fa.fa-arrow-right  Generate
+  a(type="button" class="btn btn-danger" onclick="exportGeneration();")
+    i.fa.fa-arrow-right  Get Save Code
+
 br
 p.big
   textarea(name="blockInformation" id="blockInformation" rows="10" cols="128" style="font-size: 0.875em")
