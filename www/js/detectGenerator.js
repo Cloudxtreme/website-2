@@ -9,7 +9,7 @@ function generateDetectCommand() {
   var mainComm = "";
 
   if (!(blockInformationSeperator)) {
-
+    blockInformationSeperator = "\n";
   }
 
   for (var i = 0; i < blockInformation.length; i++) {
