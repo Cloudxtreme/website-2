@@ -11,5 +11,6 @@ function generateDetectCommand() {
     var newId = singleBlockInformation[0];
     var newData = singleBlockInformation[1];
     var newLoc = singleBlockInformation[2];
+    blocks.push({"id": newId, "data": newData, "loc": newLoc});
   }
 }
