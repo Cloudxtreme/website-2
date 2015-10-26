@@ -36,6 +36,6 @@ function generateDetectCommand() {
 
 function exportGeneration() {
   // alert("Coming Soon to My Website Near You!");
-  var saveCode = "Test";
+  var saveCode = {"blockInformation": blocks};
   var savePrompt = prompt("Copy your save code from here:",saveCode);
 }

@@ -37,5 +37,5 @@ function generateDetectCommand() {
 function exportGeneration() {
   // alert("Coming Soon to My Website Near You!");
   var saveCode = "Test";
-  var savePrompt = prompt(saveCode);
+  var savePrompt = prompt("Copy your save code from here:",saveCode);
 }
