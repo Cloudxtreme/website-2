@@ -1,14 +1,14 @@
-function generateDetectCommand() {
-  var entitySelector = document.getElementById("entitySelector").value;
-  var scoreEntitySelector = document.getElementById("scoreEntitySelector").value;
-  var detectObjective = document.getElementById("detectObjective").value;
-  var detectAmt = document.getElementById("detectAmt").value;
-  var entityData = document.getElementById("entityData").value;
-  var blockInformationSeperator = document.getElementById("blockInformationSeperator").value;
-  var blockInformation = document.getElementById("blockInformation").value.split("\n");
-  var blocks = [];
-  var mainComm = "";
+var entitySelector = document.getElementById("entitySelector").value;                                                                     
+var scoreEntitySelector = document.getElementById("scoreEntitySelector").value;                                                           
+var detectObjective = document.getElementById("detectObjective").value;                                                                   
+var detectAmt = document.getElementById("detectAmt").value;                                                                               
+var entityData = document.getElementById("entityData").value;                                                                             
+var blockInformationSeperator = document.getElementById("blockInformationSeperator").value;                                               
+var blockInformation = document.getElementById("blockInformation").value.split("\n");                                                     
+var blocks = [];                                                                                                                          
+var mainComm = ""; 
 
+function generateDetectCommand() {
   if (!(blockInformationSeperator)) {
     blockInformationSeperator = "|";
   }
@@ -36,7 +36,7 @@ function generateDetectCommand() {
 
 function exportGeneration() {
   // alert("Coming Soon to My Website Near You!");
-  var saveCode = {"blockInformation": [blocks]};
+  var saveCode = {"blockInformation": blocks};
   var SsaveCode = JSON.stringify(saveCode);
   var savePrompt = prompt("Copy your save code from here:",SsaveCode);
 }
