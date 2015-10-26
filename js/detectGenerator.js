@@ -1,44 +1,42 @@
-function generateVars() {
-  var entitySelector = document.getElementById("entitySelector").value;                                                                     
-  var scoreEntitySelector = document.getElementById("scoreEntitySelector").value;                                                           
-  var detectObjective = document.getElementById("detectObjective").value;                                                                   
-  var detectAmt = document.getElementById("detectAmt").value;                                                                               
-  var entityData = document.getElementById("entityData").value;                                                                             
-  var blockInformationSeperator = document.getElementById("blockInformationSeperator").value;                                               
-  var blockInformation = document.getElementById("blockInformation").value.split("\n");                                                     
-  var blocks = [];                                                                                                                          
-  var mainComm = ""; 
-}
-
 function generateDetectCommand() {
-  if (!(window.blockInformationSeperator)) {
-    window.blockInformationSeperator = "|";
+  var entitySelector = document.getElementById("entitySelector").value;
+  var scoreEntitySelector = document.getElementById("scoreEntitySelector").value;
+  var detectObjective = document.getElementById("detectObjective").value;
+  var detectAmt = document.getElementById("detectAmt").value;
+  var entityData = document.getElementById("entityData").value;
+  var blockInformationSeperator = document.getElementById("blockInformationSeperator").value;
+  var blockInformation = document.getElementById("blockInformation").value.split("\n");
+  var blocks = [];
+  var mainComm = "";
+
+  if (!(blockInformationSeperator)) {
+    blockInformationSeperator = "|";
   }
 
-  for (var i = 0; i < window.blockInformation.length; i++) {
+  for (var i = 0; i < blockInformation.length; i++) {
     var singleBlockInformation = blockInformation[i].split(blockInformationSeperator);
     var newId = singleBlockInformation[0];
     var newData = singleBlockInformation[1];
     var newLoc = singleBlockInformation[2];
-    window.blocks.push({"bname": newId, "dv": newData, "loc": newLoc});
+    blocks.push({"bname": newId, "dv": newData, "loc": newLoc});
   }
 
-  for (var j = 0; j < window.blocks.length; j++) {
-    window.mainComm += "execute " + window.entitySelector + " ~ ~ ~ detect " + window.blocks[j].loc + " " + window.blocks[j].bname + " " + window.blocks[j].dv + " ";
+  for (var j = 0; j < blocks.length; j++) {
+    mainComm += "execute " + entitySelector + " ~ ~ ~ detect " + blocks[j].loc + " " + blocks[j].bname + " " + blocks[j].dv + " ";
   }
 
   if (entityData) {
-    window.mainComm += "scoreboard players set " + window.scoreEntitySelector + " " + window.detectObjective + " " + window.detectAmt + " " + window.entityData;
+    mainComm += "scoreboard players set " + scoreEntitySelector + " " + detectObjective + " " + detectAmt + " " + entityData;
   } else {
-    window.mainComm += "scoreboard players set " + window.scoreEntitySelector + " " + window.detectObjective + " " + window.detectAmt;
+    mainComm += "scoreboard players set " + scoreEntitySelector + " " + detectObjective + " " + detectAmt;
   }
 
-  document.getElementById("commandOutput").innerHTML = window.mainComm;
+  document.getElementById("commandOutput").innerHTML = mainComm;
 }
 
 function exportGeneration() {
   // alert("Coming Soon to My Website Near You!");
-  var saveCode = {"blockInformation": window.blocks};
+  var saveCode = {"blockInformation": blocks};
   var SsaveCode = JSON.stringify(saveCode);
   var savePrompt = prompt("Copy your save code from here:",SsaveCode);
 }

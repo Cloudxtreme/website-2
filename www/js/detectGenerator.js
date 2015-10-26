@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function generateVars() {
   var entitySelector = document.getElementById("entitySelector").value;                                                                     
   var scoreEntitySelector = document.getElementById("scoreEntitySelector").value;                                                           
@@ -13,6 +14,21 @@ function generateVars() {
 function generateDetectCommand() {
   if (!(window.blockInformationSeperator)) {
     window.blockInformationSeperator = "|";
+=======
+function generateDetectCommand() {
+  var entitySelector = document.getElementById("entitySelector").value;
+  var scoreEntitySelector = document.getElementById("scoreEntitySelector").value;
+  var detectObjective = document.getElementById("detectObjective").value;
+  var detectAmt = document.getElementById("detectAmt").value;
+  var entityData = document.getElementById("entityData").value;
+  var blockInformationSeperator = document.getElementById("blockInformationSeperator").value;
+  var blockInformation = document.getElementById("blockInformation").value.split("\n");
+  var blocks = [];
+  var mainComm = "";
+
+  if (!(blockInformationSeperator)) {
+    blockInformationSeperator = "|";
+>>>>>>> parent of 0256411... save
   }
 
   for (var i = 0; i < window.blockInformation.length; i++) {
@@ -38,7 +54,11 @@ function generateDetectCommand() {
 
 function exportGeneration() {
   // alert("Coming Soon to My Website Near You!");
+<<<<<<< HEAD
   var saveCode = {"blockInformation": window.blocks};
+=======
+  var saveCode = {"blockInformation": [blocks]};
+>>>>>>> parent of 0256411... save
   var SsaveCode = JSON.stringify(saveCode);
   var savePrompt = prompt("Copy your save code from here:",SsaveCode);
 }
