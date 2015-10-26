@@ -1,13 +1,13 @@
 function generateVars() {
-  window.entitySelector = document.getElementById("entitySelector").value;                                                                     
-  window.scoreEntitySelector = document.getElementById("scoreEntitySelector").value;                                                           
-  window.detectObjective = document.getElementById("detectObjective").value;                                                                   
-  window.detectAmt = document.getElementById("detectAmt").value;                                                                               
-  window.entityData = document.getElementById("entityData").value;                                                                             
-  window.blockInformationSeperator = document.getElementById("blockInformationSeperator").value;                                               
-  window.blockInformation = document.getElementById("blockInformation").value.split("\n");                                                     
-  window.blocks = [];                                                                                                                          
-  window.mainComm = ""; 
+  var entitySelector = document.getElementById("entitySelector").value;                                                                     
+  var scoreEntitySelector = document.getElementById("scoreEntitySelector").value;                                                           
+  var detectObjective = document.getElementById("detectObjective").value;                                                                   
+  var detectAmt = document.getElementById("detectAmt").value;                                                                               
+  var entityData = document.getElementById("entityData").value;                                                                             
+  var blockInformationSeperator = document.getElementById("blockInformationSeperator").value;                                               
+  var blockInformation = document.getElementById("blockInformation").value.split("\n");                                                     
+  var blocks = [];                                                                                                                          
+  var mainComm = ""; 
 }
 
 function generateDetectCommand() {
