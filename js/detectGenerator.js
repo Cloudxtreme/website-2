@@ -11,34 +11,34 @@ function generateVars() {
 }
 
 function generateDetectCommand() {
-  if (!(blockInformationSeperator)) {
-    blockInformationSeperator = "|";
+  if (!(window.blockInformationSeperator)) {
+    window.blockInformationSeperator = "|";
   }
 
-  for (var i = 0; i < blockInformation.length; i++) {
+  for (var i = 0; i < window.blockInformation.length; i++) {
     var singleBlockInformation = blockInformation[i].split(blockInformationSeperator);
     var newId = singleBlockInformation[0];
     var newData = singleBlockInformation[1];
     var newLoc = singleBlockInformation[2];
-    blocks.push({"bname": newId, "dv": newData, "loc": newLoc});
+    window.blocks.push({"bname": newId, "dv": newData, "loc": newLoc});
   }
 
-  for (var j = 0; j < blocks.length; j++) {
-    mainComm += "execute " + entitySelector + " ~ ~ ~ detect " + blocks[j].loc + " " + blocks[j].bname + " " + blocks[j].dv + " ";
+  for (var j = 0; j < window.blocks.length; j++) {
+    window.mainComm += "execute " + window.entitySelector + " ~ ~ ~ detect " + window.blocks[j].loc + " " + window.blocks[j].bname + " " + window.blocks[j].dv + " ";
   }
 
   if (entityData) {
-    mainComm += "scoreboard players set " + scoreEntitySelector + " " + detectObjective + " " + detectAmt + " " + entityData;
+    window.mainComm += "scoreboard players set " + window.scoreEntitySelector + " " + window.detectObjective + " " + window.detectAmt + " " + window.entityData;
   } else {
-    mainComm += "scoreboard players set " + scoreEntitySelector + " " + detectObjective + " " + detectAmt;
+    window.mainComm += "scoreboard players set " + window.scoreEntitySelector + " " + window.detectObjective + " " + window.detectAmt;
   }
 
-  document.getElementById("commandOutput").innerHTML = mainComm;
+  document.getElementById("commandOutput").innerHTML = window.mainComm;
 }
 
 function exportGeneration() {
   // alert("Coming Soon to My Website Near You!");
-  var saveCode = {"blockInformation": blocks};
+  var saveCode = {"blockInformation": window.blocks};
   var SsaveCode = JSON.stringify(saveCode);
   var savePrompt = prompt("Copy your save code from here:",SsaveCode);
 }
