@@ -4,10 +4,10 @@ function generateDetectCommand() {
   this.detectObjective = document.getElementById("detectObjective").value;
   this.detectAmt = document.getElementById("detectAmt").value;
   this.entityData = document.getElementById("entityData").value;
-  var blockInformationSeperator = document.getElementById("blockInformationSeperator").value;
+  this.blockInformationSeperator = document.getElementById("blockInformationSeperator").value;
   var blockInformation = document.getElementById("blockInformation").value.split("\n");
   this.blocks = [];
-  this.settings = {"entitySelector": this.entitySelector, "scoreEntitySelector": this.scoreEntitySelector, "detectObjective": this.detectObjective, "detectAmt": this.detectAmt, }
+  this.settings = {"entitySelector": this.entitySelector, "scoreEntitySelector": this.scoreEntitySelector, "detectObjective": this.detectObjective, "detectAmt": this.detectAmt, "entityData": this.entityData, "blockInformationSeparator": this.blockInformationSeparator}
   var mainComm = "";
 
   if (!(blockInformationSeperator)) {
