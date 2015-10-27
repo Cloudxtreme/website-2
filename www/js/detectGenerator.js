@@ -1,12 +1,13 @@
 function generateDetectCommand() {
-  var entitySelector = document.getElementById("entitySelector").value;
-  var scoreEntitySelector = document.getElementById("scoreEntitySelector").value;
-  var detectObjective = document.getElementById("detectObjective").value;
-  var detectAmt = document.getElementById("detectAmt").value;
-  var entityData = document.getElementById("entityData").value;
+  this.entitySelector = document.getElementById("entitySelector").value;
+  this.scoreEntitySelector = document.getElementById("scoreEntitySelector").value;
+  this.detectObjective = document.getElementById("detectObjective").value;
+  this.detectAmt = document.getElementById("detectAmt").value;
+  this.entityData = document.getElementById("entityData").value;
   var blockInformationSeperator = document.getElementById("blockInformationSeperator").value;
   var blockInformation = document.getElementById("blockInformation").value.split("\n");
   this.blocks = [];
+  this.settings = {"entitySelector": this.entitySelector, "scoreEntitySelector": this.scoreEntitySelector, "detectObjective": }
   var mainComm = "";
 
   if (!(blockInformationSeperator)) {
@@ -22,24 +23,26 @@ function generateDetectCommand() {
   }
 
   for (var j = 0; j < this.blocks.length; j++) {
-    mainComm += "execute " + entitySelector + " ~ ~ ~ detect " + this.blocks[j].loc + " " + this.blocks[j].txtId + " " + this.blocks[j].dv + " ";
+    mainComm += "execute " + this.entitySelector + " ~ ~ ~ detect " + this.blocks[j].loc + " " + this.blocks[j].txtId + " " + this.blocks[j].dv + " ";
   }
 
   if (entityData) {
-    mainComm += "scoreboard players set " + scoreEntitySelector + " " + detectObjective + " " + detectAmt + " " + entityData;
+    mainComm += "scoreboard players set " + this.scoreEntitySelector + " " + this.detectObjective + " " + this.detectAmt + " " + this.entityData;
   } else {
-    mainComm += "scoreboard players set " + scoreEntitySelector + " " + detectObjective + " " + detectAmt;
+    mainComm += "scoreboard players set " + this.scoreEntitySelector + " " + this.detectObjective + " " + this.detectAmt;
   }
 
   document.getElementById("commandOutput").innerHTML = mainComm;
 }
 
 function exportGeneration() {
-  // alert("Coming Soon to My Website Near You!");
-  var saveCode = {"blockInformation": this.blocks};
+  var saveCode = {"blockInformation": this.blocks, "options": this.settings};
   prompt("Copy your save code from here:",JSON.stringify(saveCode));
 }
 
 function importGeneration() {
-  
+  var newSaveCode = prompt("Paste your save code here:","");
+  if (newSaveCode) {
+    var dataCode = JSON.parse(newSaveCode);
+  }
 }
