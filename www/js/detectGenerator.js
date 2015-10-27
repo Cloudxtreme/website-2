@@ -6,7 +6,7 @@ function generateDetectCommand() {
   var entityData = document.getElementById("entityData").value;
   var blockInformationSeperator = document.getElementById("blockInformationSeperator").value;
   var blockInformation = document.getElementById("blockInformation").value.split("\n");
-  var blocks = [];
+  this.blocks = [];
   var mainComm = "";
 
   if (!(blockInformationSeperator)) {
@@ -18,11 +18,11 @@ function generateDetectCommand() {
     var newId = singleBlockInformation[0];
     var newData = singleBlockInformation[1];
     var newLoc = singleBlockInformation[2];
-    blocks.push({"bname": newId, "dv": newData, "loc": newLoc});
+    this.blocks.push({"bname": newId, "dv": newData, "loc": newLoc});
   }
 
-  for (var j = 0; j < blocks.length; j++) {
-    mainComm += "execute " + entitySelector + " ~ ~ ~ detect " + blocks[j].loc + " " + blocks[j].bname + " " + blocks[j].dv + " ";
+  for (var j = 0; j < this.blocks.length; j++) {
+    mainComm += "execute " + entitySelector + " ~ ~ ~ detect " + this.blocks[j].loc + " " + this.blocks[j].bname + " " + this.blocks[j].dv + " ";
   }
 
   if (entityData) {
@@ -36,7 +36,7 @@ function generateDetectCommand() {
 
 function exportGeneration() {
   // alert("Coming Soon to My Website Near You!");
-  var saveCode = {"blockInformation": blocks};
+  var saveCode = {"blockInformation": this.blocks};
   var SsaveCode = JSON.stringify(saveCode);
   var savePrompt = prompt("Copy your save code from here:",SsaveCode);
 }
