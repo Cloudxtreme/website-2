@@ -12,11 +12,11 @@ function generateDetectCommand() {
   var mainComm = "";
 
   if (!(blockInformationSeperator)) {
-    blockInformationSeperator = "|";
+    this.blockInformationSeperator = "|";
   }
 
   for (var i = 0; i < blockInformation.length; i++) {
-    var singleBlockInformation = blockInformation[i].split(blockInformationSeperator);
+    var singleBlockInformation = blockInformation[i].split(this.blockInformationSeperator);
     var newId = singleBlockInformation[0];
     var newData = singleBlockInformation[1];
     var newLoc = singleBlockInformation[2];
