@@ -45,7 +45,7 @@ function importGeneration() {
   var newSaveCode = prompt("Paste your save code here:","");
   if (newSaveCode) {
     var dataCode = JSON.parse(newSaveCode);
-    document.getElementById("entitySelector").innerHTML = dataCode.settings.entitySelector;
+    document.getElementById("entitySelector").value = dataCode.settings.entitySelector;
     this.scoreEntitySelector = dataCode.settings.scoreEntitySelector;
     this.detectObjective = dataCode.settings.detectObjective;
     this.detectAmt = dataCode.settings.detectAmt;
