@@ -39,7 +39,7 @@ div.container
       br
       h3.cpxTitle Command
       div.border
-        h5#commandOutput
+        h5#commandOutput Click Generate to see your command!
 br
 br
 br
@@ -48,11 +48,9 @@ script(src="js/detectGenerator.js")
 
 h3.cpxTitle Block Information
 div.cpx-center
-  a(type="button" class="btn btn-danger" onclick="generateDetectCommand();")
+  a(type="button" class="btn btn-danger genBtn" onclick="generateDetectCommand();")
     i.fa.fa-arrow-right  Generate
-  br
-  br
-  a(type="button" class="btn btn-danger" onclick="exportGeneration();")
+  a(type="button" class="btn btn-danger genBtn" onclick="exportGeneration();")
     i.fa.fa-arrow-right  Get Save Code
 
 br
