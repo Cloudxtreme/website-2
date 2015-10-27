@@ -5,6 +5,7 @@ function generateDetectCommand() {
   this.detectAmt = document.getElementById("detectAmt").value;
   this.entityData = document.getElementById("entityData").value;
   this.blockInformationSeperator = document.getElementById("blockInformationSeparator").value;
+  this.txtBlockInformation = document.getElementById("blockInformation").value;
   var blockInformation = document.getElementById("blockInformation").value.split("\n");
   this.blocks = [];
   this.settings = {"entitySelector": this.entitySelector, "scoreEntitySelector": this.scoreEntitySelector, "detectObjective": this.detectObjective, "detectAmt": this.detectAmt, "entityData": this.entityData, "blockInformationSeparator": this.blockInformationSeparator}
@@ -50,6 +51,9 @@ function importGeneration() {
     this.detectAmt = dataCode.settings.detectAmt;
     this.entityData = dataCode.settings.entityData;
     this.blockInformationSeparator = dataCode.settings.blockInformationSeparator;
-    
+
+    for (var k = 0; k < dataCode.blockInformation.length; k++) {
+      this.txtBlockInformation = dataCode.blockInformation[k].txtId + this.blockInformationSeparator + dataCode.blockInformation[k].dv + this.blockInformationSeparator + dataCode.blockInformation[k].loc + "\n";
+    }
   }
 }
