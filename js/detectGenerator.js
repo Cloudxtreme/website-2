@@ -18,11 +18,11 @@ function generateDetectCommand() {
     var newId = singleBlockInformation[0];
     var newData = singleBlockInformation[1];
     var newLoc = singleBlockInformation[2];
-    this.blocks.push({"bname": newId, "dv": newData, "loc": newLoc});
+    this.blocks.push({"txtId": newId, "dv": newData, "loc": newLoc});
   }
 
   for (var j = 0; j < this.blocks.length; j++) {
-    mainComm += "execute " + entitySelector + " ~ ~ ~ detect " + this.blocks[j].loc + " " + this.blocks[j].bname + " " + this.blocks[j].dv + " ";
+    mainComm += "execute " + entitySelector + " ~ ~ ~ detect " + this.blocks[j].loc + " " + this.blocks[j].txtId + " " + this.blocks[j].dv + " ";
   }
 
   if (entityData) {
