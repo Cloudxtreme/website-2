@@ -8,7 +8,7 @@ function generateDetectCommand() {
   this.txtBlockInformation = document.getElementById("blockInformation").value;
   var blockInformation = document.getElementById("blockInformation").value.split("\n");
   this.blocks = [];
-  this.settings = {"entitySelector": this.entitySelector, "scoreEntitySelector": this.scoreEntitySelector, "detectObjective": this.detectObjective, "detectAmt": this.detectAmt, "entityData": this.entityData, "blockInformationSeparator": this.blockInformationSeparator}
+  this.settings = {"entitySelector": this.entitySelector, "scoreEntitySelector": this.scoreEntitySelector, "detectObjective": this.detectObjective, "detectAmt": this.detectAmt, "entityData": this.entityData, "blockInformationSeparator": document.getElementById("blockInformationSeparator").value}
   var mainComm = "";
 
   if (!(blockInformationSeperator)) {
@@ -53,7 +53,7 @@ function importGeneration() {
     document.getElementById("blockInformationSeparator").value = dataCode.settings.blockInformationSeparator;
 
     for (var k = 0; k < dataCode.blockInformation.length; k++) {
-      document.getElementById("txtBlockInformation").value += dataCode.blockInformation[k].txtId + this.blockInformationSeparator + dataCode.blockInformation[k].dv + this.blockInformationSeparator + dataCode.blockInformation[k].loc + "\n";
+      document.getElementById("blockInformation").value += dataCode.blockInformation[k].txtId + this.blockInformationSeparator + dataCode.blockInformation[k].dv + this.blockInformationSeparator + dataCode.blockInformation[k].loc + "\n";
     }
   }
 }
