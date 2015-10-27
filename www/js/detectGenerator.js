@@ -45,16 +45,15 @@ function importGeneration() {
   var newSaveCode = prompt("Paste your save code here:","");
   if (newSaveCode) {
     var dataCode = JSON.parse(newSaveCode);
-    console.log(dataCode);
     document.getElementById("entitySelector").value = dataCode.settings.entitySelector;
-    this.scoreEntitySelector = dataCode.settings.scoreEntitySelector;
-    this.detectObjective = dataCode.settings.detectObjective;
-    this.detectAmt = dataCode.settings.detectAmt;
-    this.entityData = dataCode.settings.entityData;
-    this.blockInformationSeparator = dataCode.settings.blockInformationSeparator;
+    document.getElementById("scoreEntitySelector").value = dataCode.settings.scoreEntitySelector;
+    document.getElementById("detectObjective").value = dataCode.settings.detectObjective;
+    document.getElementById("detectAmt").value = dataCode.settings.detectAmt;
+    document.getElementById("entityData").value = dataCode.settings.entityData;
+    document.getElementById("blockInformationSeparator").value = dataCode.settings.blockInformationSeparator;
 
     for (var k = 0; k < dataCode.blockInformation.length; k++) {
-      this.txtBlockInformation = dataCode.blockInformation[k].txtId + this.blockInformationSeparator + dataCode.blockInformation[k].dv + this.blockInformationSeparator + dataCode.blockInformation[k].loc + "\n";
+      document.getElementById("txtBlockInformation").value += dataCode.blockInformation[k].txtId + this.blockInformationSeparator + dataCode.blockInformation[k].dv + this.blockInformationSeparator + dataCode.blockInformation[k].loc + "\n";
     }
   }
 }
