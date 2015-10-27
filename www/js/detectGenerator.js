@@ -36,7 +36,7 @@ function generateDetectCommand() {
 }
 
 function exportGeneration() {
-  var saveCode = {"blockInformation": this.blocks, "options": this.settings};
+  var saveCode = {"blockInformation": this.blocks, "settings": this.settings};
   prompt("Copy your save code from here:",JSON.stringify(saveCode));
 }
 
@@ -44,5 +44,10 @@ function importGeneration() {
   var newSaveCode = prompt("Paste your save code here:","");
   if (newSaveCode) {
     var dataCode = JSON.parse(newSaveCode);
+    this.entitySelector = dataCode.settings.entitySelector;
+    this.scoreEntitySelector = dataCode.settings.scoreEntitySelector;
+    this.detectObjective = dataCode.settings.detectObjective;
+    this.detectAmt = dataCode.settings.detectAmt;
+    this.entityData = dataCode.settings.entityData;
   }
 }
