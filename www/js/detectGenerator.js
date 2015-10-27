@@ -4,19 +4,14 @@ function generateDetectCommand() {
   this.detectObjective = document.getElementById("detectObjective").value;
   this.detectAmt = document.getElementById("detectAmt").value;
   this.entityData = document.getElementById("entityData").value;
-  this.blockInformationSeperator = document.getElementById("blockInformationSeparator").value;
   this.txtBlockInformation = document.getElementById("blockInformation").value;
   var blockInformation = document.getElementById("blockInformation").value.split("\n");
   this.blocks = [];
   this.settings = {"entitySelector": this.entitySelector, "scoreEntitySelector": this.scoreEntitySelector, "detectObjective": this.detectObjective, "detectAmt": this.detectAmt, "entityData": this.entityData, "blockInformationSeparator": document.getElementById("blockInformationSeparator").value}
   var mainComm = "";
 
-  if (!(blockInformationSeperator)) {
-    this.blockInformationSeperator = "|";
-  }
-
   for (var i = 0; i < blockInformation.length; i++) {
-    var singleBlockInformation = blockInformation[i].split(this.blockInformationSeperator);
+    var singleBlockInformation = blockInformation[i].split("#");
     var newId = singleBlockInformation[0];
     var newData = singleBlockInformation[1];
     var newLoc = singleBlockInformation[2];
@@ -50,10 +45,9 @@ function importGeneration() {
     document.getElementById("detectObjective").value = dataCode.settings.detectObjective;
     document.getElementById("detectAmt").value = dataCode.settings.detectAmt;
     document.getElementById("entityData").value = dataCode.settings.entityData;
-    document.getElementById("blockInformationSeparator").value = dataCode.settings.blockInformationSeparator;
 
     for (var k = 0; k < dataCode.blockInformation.length; k++) {
-      document.getElementById("blockInformation").value += dataCode.blockInformation[k].txtId + this.blockInformationSeparator + dataCode.blockInformation[k].dv + this.blockInformationSeparator + dataCode.blockInformation[k].loc + "\n";
+      document.getElementById("blockInformation").value += dataCode.blockInformation[k].txtId + "#" + dataCode.blockInformation[k].dv + "#" + dataCode.blockInformation[k].loc + "\n";
     }
   }
 }

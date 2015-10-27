@@ -7,7 +7,7 @@ function generateDetectCommand() {
   this.txtBlockInformation = document.getElementById("blockInformation").value;
   var blockInformation = document.getElementById("blockInformation").value.split("\n");
   this.blocks = [];
-  this.settings = {"entitySelector": this.entitySelector, "scoreEntitySelector": this.scoreEntitySelector, "detectObjective": this.detectObjective, "detectAmt": this.detectAmt, "entityData": this.entityData, "blockInformationSeparator": document.getElementById("blockInformationSeparator").value}
+  this.settings = {"entitySelector": this.entitySelector, "scoreEntitySelector": this.scoreEntitySelector, "detectObjective": this.detectObjective, "detectAmt": this.detectAmt, "entityData": this.entityData}
   var mainComm = "";
 
   for (var i = 0; i < blockInformation.length; i++) {
