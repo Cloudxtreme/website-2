@@ -45,8 +45,8 @@ function importGeneration() {
     document.getElementById("detectObjective").value = dataCode.settings.detectObjective;
     document.getElementById("detectAmt").value = dataCode.settings.detectAmt;
     document.getElementById("entityData").value = dataCode.settings.entityData;
-
-    for (var k = 0; k < dataCode.blockInformation.length; k++) {
+    document.getElementById("blockInformation").value = dataCode.blockInformation[0].txtId + "#" + dataCode.blockInformation[0].dv + "#" + dataCode.blockInformation[0].loc + "\n";
+    for (var k = 1; k < dataCode.blockInformation.length; k++) {
       document.getElementById("blockInformation").value += dataCode.blockInformation[k].txtId + "#" + dataCode.blockInformation[k].dv + "#" + dataCode.blockInformation[k].loc + "\n";
     }
   }
