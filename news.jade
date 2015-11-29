@@ -14,7 +14,7 @@ div.container
             div.btn.btn-default.btn-lg
               a(href="#{_article.slug}")
                 h2 #{_article.title}
-              p.big #{_article.summary}
+              p.med #{_article.summary}
                 a(href="#{_article.slug}")  ...more
 if public._data.news.disqus
   include _disqus.html
