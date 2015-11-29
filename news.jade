@@ -11,10 +11,10 @@ div.container
         h1 News
         for _article in public._data.articles
           div.col-xs-12.col-md-6
-            div.border
+            div.btn.btn-default.btn-lg
               a(href="#{_article.slug}")
                 h2 #{_article.title}
-              p #{_article.summary}
+              p.big #{_article.summary}
                 a(href="#{_article.slug}")  ...more
 if public._data.news.disqus
   include _disqus.html
