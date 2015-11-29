@@ -21,17 +21,17 @@
   "articles": [
     {
       "title": "Testing News System",
-      "summary": "There is a new news system, as you probably know by now.",
+      "summary": "There is a new news system,",
       "slug": "/testing_news.html"
     },
     {
       "title": "Changes",
-      "summary": "Changes may be made soon.",
+      "summary": "Changes are being made",
       "slug": "/redesign.html"
     },
     {
       "title": "Suggestions",
-      "summary": "I need suggestions for the website!",
+      "summary": "Inspiration!",
       "slug": "/suggestions.html"
     }
   ],
