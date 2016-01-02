@@ -49,6 +49,10 @@
   ],
   "colors": [
     {
+      "name": "__comment",
+      "__comment": "depreceated"
+    },
+    {
       "name": "Base03",
       "class":"base03",
       "bgclass": "base03bg",
