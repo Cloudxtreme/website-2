@@ -20,6 +20,11 @@
   },
   "articles": [
     {
+      "title": "Command Blocks...",
+      "summary": "Sometimes I think it's just me",
+      "slug": "/cmd.html"
+    },
+    {
       "title": "Testing News System",
       "summary": "There is a new news system,",
       "slug": "/testing_news.html"
